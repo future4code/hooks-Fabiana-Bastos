@@ -1,0 +1,8 @@
+Como forma de facilitar o processo de criação de um código, podemos seguir uma lista de sete passos que nos auxiliaram a pensar, estruturar, criar e aprimorar o que será criado. Os passos são:
+1. Ter atenção ao enunciado, para poder compreender o que está sendo pedido de nós e o que precisamos montar no código;
+2. Em seguida, retirar informações revelantes funciona para destacar o que é mais importante do que foi colocado no enunciado;
+3. Pensar entradas e saídas requer que pensemos o que precisamos pedir ao usuário e gerar no sistema pra organizar as informações pedidas no enunciado;
+4. Após compreender o que precisamos conseguir e armazenar no sistema, fazer um esquema visual é o quarto passo para melhor, por falta de palavra melhor, visualizar o que será feito e assim estruturar um código coeso;
+5. Criar um código feio parte do princípio de melhor feito que perfeito, pra conseguirmos gerar algo e depois preparar;
+6. Testar é o momento em que vamos ver se deu tudo certo;
+7. Refatorar é o passo em que reorganizamos e tornamos nosso código mais enxuto, com melhores nomes de variáveis e com soluções mais simples.
