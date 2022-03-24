@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vendas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="fundo">
+    <div>
+        <p class="nome-lojinha2"><img style="width: 70px;" src="img/sinimmmm.gif"/>Lojinha de pelúcias</p>
+    </div>
+    
+    <div>
+        <a href="index.html">Página Inicial</a>
+        <a href="ctrl-estoque.html">Controle de Estoque</a>
+        <a href="add-produto.html">Adicionar Produto</a>
+        <a href="funcionarios.html">Funcionários</a>
+        <a href="vendas.html">Vendas</a>
+    </div>
+
+    <h2 class="titulo-sessao">Controle de Vendas</h2>
+    <form action="">
+        <div>
+            <label for="tipo-produto">Produto comprado: </label>
+            <input type="text" id="tipo-produto" name="tipo-produto">
+        </div>
+
+        <div> 
+            <label for="forma-pagamento">Forma de pagamento: </label>
+            <label for="debito">Débito</label>
+            <input type="checkbox"id="debito" name="debito">
+            <label for="credito">Crédito</label>
+            <input type="checkbox"id="credito" name="credito">
+        </div>
+
+        <div class="form-add">
+            <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
+            <button type="submit">Adicionar</button>
+        </div>
+
+    </form>

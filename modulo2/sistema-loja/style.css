@@ -1,0 +1,55 @@
+.fundo {
+    background-color: antiquewhite;
+}
+
+.nome-lojinha { 
+    text-align: center ;/
+font: 25px Arial, Helvetica, sans-serif; 
+color: #f52474;
+background: #ACE0E5; 
+border-top: 2px dotted #f52474; 
+border-right: 2px dotted #f52474; 
+border-bottom: 2px dotted #f52474;
+border-left: 2px dotted #f52474;
+padding-left:35px;
+
+}
+
+.nome-lojinha2 { 
+    background-color: #ACE0E5;
+    padding: auto;
+    width: fit-content;
+
+}
+
+.links-navegacao {
+text-align: center;
+background-color: #ACE0E5;
+}
+
+#texto-apresentacao {
+    font-family: fantasy;
+    text-align: center;
+    text-decoration: wavy;
+}
+
+.cursiva {
+    text-align: center;
+}
+
+.ibagens {
+    text-align: center;
+}
+
+.produtos {
+	width:200px;
+	height:50px;
+	background-color:#ACE0E5;
+	border-radius: 10px 20px;
+}
+
+.titulo-sessao{
+    font-size: xx-large;
+    font-style: italic;
+    color: rgb(165, 26, 170);
+}
