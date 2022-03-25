@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Adicionar Produto</title>
+    <title>Vendas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="fundo" background="./img/back.gif">
@@ -20,30 +20,19 @@
         <a href="vendas.html">Vendas</a>
     </div>
 
-    
-    <h2 class="titulo-sessao">Adicionar Produto</h2>
+    <h2 class="titulo-sessao">Controle de Vendas</h2>
     <form action="">
         <div>
-            <label for="link-foto">Link para foto: </label>
-            <input type="url" id="link-foto" name="link-foto">
+            <label for="tipo-produto">Produto comprado: </label>
+            <input type="text" id="tipo-produto" name="tipo-produto">
         </div>
-        
-        <div>
-            <label for="descricao">Descrição do produto: </label>
-            <!-- Adicione o id apropriado para o input abaixo -->
-            <input type="text" id="descricao" name="descrição">
-        </div>
-        
-        <div>
-            <label for="preco">Preço (em R$): </label>
-            <!-- Adicione o id apropriado e o type para receber números abaixo -->
-            <input type="text" id="preco" name="preço">
-        </div>
-        
-        <div>
-            <!-- Preencha as propriedades necessárias para os elementos abaixo -->
-            <label>Quantidade disponível: </label>
-            <input type="number" id="quantidade-disponivel" name="quantidade disponível">
+
+        <div> 
+            <label for="forma-pagamento">Forma de pagamento: </label>
+            <label for="debito">Débito</label>
+            <input type="checkbox"id="debito" name="debito">
+            <label for="credito">Crédito</label>
+            <input type="checkbox"id="credito" name="credito">
         </div>
 
         <div class="form-add">
@@ -52,6 +41,3 @@
         </div>
 
     </form>
-
-</body>
-</html>
