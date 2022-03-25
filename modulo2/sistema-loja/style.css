@@ -2,8 +2,13 @@
     background-color: antiquewhite;
 }
 
+.container {
+    width: 600px; 
+    margin-left: auto;
+    margin-right: auto; 
+}
 .nome-lojinha { 
-    text-align: center ;/
+    text-align: center;
 font: 25px Arial, Helvetica, sans-serif; 
 color: #f52474;
 background: #ACE0E5; 
