@@ -17,8 +17,10 @@ h2 {
 }
 
 input {
-    height: 20px;
-    width: 500px;
+    border-top: black;
+    border-top-width: 700px;
+    border-left: white;
+    border-right: white;
 }
 
 button:focus {
