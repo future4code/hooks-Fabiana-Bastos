@@ -122,6 +122,13 @@ td button {
     margin-right: auto;
 }
 
+.botao-laranja:hover {
+    background-color: #f1c914;
+}
+
+.botao-laranja:active {
+    text-decoration: white;
+}
 
 #back-button {
     background-color: white;
