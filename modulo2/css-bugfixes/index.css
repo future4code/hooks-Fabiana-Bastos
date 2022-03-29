@@ -62,6 +62,13 @@ div img {
     width: 40px;
 }
 
+.icone:hover {
+    opacity: 0.10;
+}
+
+.botao-icone:active {
+    background-color: black;
+}
 
 /** 
   *
