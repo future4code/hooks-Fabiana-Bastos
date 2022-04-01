@@ -1,0 +1,41 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: mediumvioletred;
+}
+
+button {
+    padding: 4px;
+    height: 40px;
+    border: black, 1px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    align-items: justify;
+    justify-content: justify;
+    background-color: #f2d0e0;
+    width: 400px;
+    height: 100%
+}
+
+.container-card {
+    display: grid;
+    grid-column: 1/4;
+    grid-template-columns: 1fr 1fr 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: start;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: mediumvioletred;
+}
