@@ -1,18 +1,4 @@
-//  function criarArrayNomesAnimais() {
-      const animais = [
-        { nome: "Cachorro", classificacao: "mamífero" },
-        { nome: "Papagaio", classificacao: "ave" },
-        { nome: "Gato", classificacao: "mamífero" },
-        { nome: "Carpa", classificacao: "peixe" },
-        { nome: "Pomba", classificacao: "ave" }
-      ]
-   // Escreva seu código aqui
-   let nomeAnimais = animais.map ((lista) => {return lista.nome});
-   return nomeAnimais
-  }
-  //
-
-  function filtraTarefas() {
+//function filtraTarefas() {
   const tarefas = [
     { titulo: "Fazer Remember", status: "done", tempo: 30 },
     { titulo: "Fazer Challange", status: "todo", tempo: 30 },
@@ -29,7 +15,11 @@
  ]
 
  // Escreva seu código aqui
-let tarefasTerminadas = tarefas.map((lista) => {return lista.titulo});
-let nomesTarefasTerminadas = tarefasTerminadas.filter (status => tarefas.status === 'done')
-return nomesTarefasTerminadas
-}
+ let finalizadas = tarefas.filter((item) => {
+   return item.status === "done"
+ }).map((item) => {
+   return item.titulo
+ })
+
+ return finalizadas
+}//
