@@ -1,14 +1,24 @@
-import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
-    const [login, setLogin] = useState
+    const navigate = useNavigate();
+
+    const goBack = () => {
+        navigate(-1);
+    }
 
     return (
         <>
             <h1>Viagens espaciais</h1>
             <div>
-                <p>Viagem A</p>
-                <p>Viagem B</p>
+                <input placeholder="E-mail"/>
+                <br/>
+                <input placeholder="Senha"/>
+                <br />
+                <button>Adicionar</button>
+                <br />
+                <br />
+                <button onClick={goBack}>Voltar</button>
             </div>
         </>
     )
