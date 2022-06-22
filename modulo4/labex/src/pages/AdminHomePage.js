@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import useProtectedPage from "./hooks/useProtectedPage";
+import useProtectedPage from "../config/hooks/useProtectedPage";
 
 const AdminHomePage = () => {
     useProtectedPage();

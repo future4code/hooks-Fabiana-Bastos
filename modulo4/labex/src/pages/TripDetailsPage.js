@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import axios from "axios";
-import useProtectedPage from "./hooks/useProtectedPage";
+import useProtectedPage from "../config/hooks/useProtectedPage";
 
 const TripDetailsPage = () => {
     useProtectedPage();
-    
+
     useEffect(() => {
         const URL ="https://us-central1-labenu-apis.cloudfunctions.net/labeX/darvas/trip/NoIFVcOiSgTKTIPVZwXS";
         const headers ={
