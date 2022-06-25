@@ -5,10 +5,10 @@ const useProtectedPage = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        const token = localStorage.getItem("token")
+        const token = localStorage.getItem('tokenLabeX')
 
         if (token === null) {
-            navigate("/login/BR");
+            navigate("/login");
         }
     }, [navigate]);
 }

@@ -6,7 +6,7 @@ import LoginPage from "./pages/LoginPage";
 import AdminHomePage from "./pages/AdminHomePage";
 import TripDetailsPage from "./pages/TripDetailsPage";
 import CreateTripPage from "./pages/CreateTripPage";
-import Error from "./pages/Error"
+import Error from "./pages/Error";
 
 function Router() {
     return (
@@ -14,9 +14,9 @@ function Router() {
         <Routes>
           <Route index element={<HomePage />} />
   
-          <Route path="/trips/list/:language" element={<ListTripsPage />} />
+          <Route path="/trips/list" element={<ListTripsPage />} />
           <Route path="/trips/application" element={<ApplicationFormPage />} />
-          <Route path="/login/:language" element={<LoginPage />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/admin/trips/list" element={<AdminHomePage />} />
           <Route path="/admin/trips/:id" element={<TripDetailsPage />} />
           <Route path="/admin/trips/create" element={<CreateTripPage />} />

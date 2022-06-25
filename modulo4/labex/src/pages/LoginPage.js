@@ -1,28 +1,8 @@
 import React, { useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
-import styled from "styled-components";
-
-const Button = styled.button`
-  background: #C9FFBF;
-  color: #5D4157;
-
-  font-size: 1em;
-  margin: 0.5em;
-  padding: 0.25em 1em;
-  border: 2px solid #5D4157;
-  border-radius: 3px;
-  text-align: center;
-`;
-
-const Input = styled.input`
-  padding: 0.5em;
-  margin: 0.5em;
-  color: ${props => props.inputColor || "#635b5b"};
-  background: #E6DADA;
-  border: none;
-  border-radius: 3px;
-`;
+import { useNavigate } from "react-router-dom";
+import { goBack } from "../config/navigate/Coordinator";
+import { Title, Answer, Button, Input } from "../config/theme/styles";
 
 const LoginPage = () => {
     const [email, setEmail] = useState("");
@@ -36,41 +16,37 @@ const LoginPage = () => {
     const onChangePassword = (event) => {
         setPassword(event.target.value);
     };
-    
+
     const onSubmitPassword = () => {
-        const URL = "https://us-central1-labenu-apis.cloudfunctions.net/labeX/darvas/login";
+    const URL = "https://us-central1-labenu-apis.cloudfunctions.net/labeX/hooks-fabiana-bastos/login";
 
-        const body = {
-            email: email,
-            password: password
-        }
-
-        axios
-        .post(URL, body)
-        .then((res) => {
-            localStorage.setItem("token", res.data.token);
-            navigate("/admin/trips/list")
-        })
-        .catch((err) => {console.log(err.response.data)
-        });
+    const body = {
+        email: email,
+        password: password
     }
-
-
-    const goBack = () => {
-        navigate(-1);
-    }
+    
+    axios
+    .post(URL, body)
+    .then((res) => {
+        localStorage.setItem("tokenLabeX", res.data.token);
+        navigate("/admin/trips/list")
+    })
+    .catch((err) => {console.log(err.response.data)
+    });
+}
+    
 
     return (
         <>
-            <h1>Login</h1>
-            <div>
-                <Input placeholder="email"
+            <Title>Login</Title>
+            <Input>
+                <Answer placeholder="email"
                     type="email"
                     value={email}
                     onChange={onChangeEmail}
                 />
                 <br/>
-                <Input  
+                <Answer 
                     placeholder="password"
                     type="password"
                     value={password}
@@ -79,8 +55,8 @@ const LoginPage = () => {
                 <br />
                 <Button onClick={onSubmitPassword}>Adicionar</Button>
                 <br />
-                <Button onClick={goBack}>Voltar</Button>
-            </div>
+                <Button onClick={() => goBack(navigate)}>Voltar</Button>
+            </Input>
         </>
     )
 };
