@@ -1,0 +1,1 @@
+export const tarefas = ['lavar roupa', 'comprar ovos']
