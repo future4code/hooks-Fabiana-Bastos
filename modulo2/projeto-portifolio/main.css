@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+footer {
+    background-color: #7e42e1;
+    text-align: center;
+    text-decoration-color: antiquewhite;
+}

@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box
+}
+
+@media screen and (max-device-width : 480px) {
+    /* celulares */
+    body > header {
+        position: fixed;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: initial;
+        height: 60px;
+      }
+
+      body > footer {
+        position: fixed;
+        bottom: 0;
+      }
+
+      body > main {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+      body > video {
+          margin-top: 50%;
+      }
+
+    }
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 50px;
+    background-color: #5CF64A; 
+}
+
+.colorTitle {
+    text-decoration-color: blanchedalmond;
+}
+
+#txtBusca {
+    width: 150px;
+    height: 20px;
+}
+
+#bttBusca {
+    width: 70px;
+    height: 25px;
+    cursor: pointer;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    padding: 50px;
+
+}
+
+main>div {
+    border: 1px;
+    border-style: dotted;
+    border-color: #5CF64A;
+}
+
+main>div>p {
+    color: #5CF64A;
+    font-size: large;
+    text-align: center;
+    border: 5px;
+}
+
+footer {
+    position:absolute;
+	bottom:0;
+	width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5CF64A;
+    color: #EE4266;
+    padding: 9px;
+}
+
+/*VIDEO 1 e 2*/
+video {
+    width: 750px;
+    margin:0 auto;
+    display: block;
+}
+
+.video-nome {
+    width: 1030px;
+    margin:0 auto;
+    display: block;
+}
