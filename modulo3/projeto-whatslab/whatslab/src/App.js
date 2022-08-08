@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Router from "./Router";
+import { createGlobalStyle } from 'styled-components';
+import Header from "./Header";
+import Footer from "./Footer";
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    background: linear-gradient(#fffffc, #274046);
+    height: 180vh;
+  }
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Header/>
+      <GlobalStyle/>
+      <Router />
+      <Footer/>
+    </>
+  )
 }
 
 export default App;
