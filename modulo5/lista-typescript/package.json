@@ -2,12 +2,18 @@
   "dependencies": {
     "typescript": "^4.7.4"
   },
-  "name": "modulo5",
+  "name": "lista-typescript",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./build/ex1.js",
+    "start2": "node ./build/ex2.js",
+    "start3": "node ./build/ex3.js",
+    "start4": "node ./build/ex4.js",
+    "start5": "node ./build/ex5.js",
+    "start6": "node ./build/ex6.js"
+
   },
   "keywords": [],
   "author": "",
