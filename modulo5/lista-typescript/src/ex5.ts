@@ -15,7 +15,7 @@ let array: infoUsuarios[] =  [
 	{name: "Aline", email: "aline@email.com", role: ROLE.NORMAL},
 	{name: "Jéssica", email: "jessica@email.com", role: ROLE.NORMAL},  
 	{name: "Adilson", email: "adilson@email.com", role: ROLE.NORMAL},  
-	{name: "Carina", email: "carina@email.com", role: ROLE.ADMIN}      
+	{name: "Carina", email: "carina@email.com", role: ROLE.ADMIN}     
 ]
 
 let filterRole = array.filter((item)=>{
