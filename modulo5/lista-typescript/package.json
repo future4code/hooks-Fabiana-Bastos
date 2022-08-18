@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "typescript": "^4.7.4"
+  },
+  "name": "lista-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "tsc ./src/ex1.ts && node ./build/ex1.js",
+    "start2": "tsc ./src/ex2.ts && node ./build/ex2.js",
+    "start3": "tsc ./src/ex3.ts && node ./build/ex3.js",
+    "start4": "tsc ./src/ex4.ts && node ./build/ex4.js",
+    "start5": "tsc ./src/ex5.ts && node ./build/ex5.js",
+    "start6": "tsc ./src/ex6.ts && node ./build/ex6.js"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
