@@ -1,0 +1,10 @@
+USE `hooks-4313275-fabiana-bastos`;
+
+CREATE TABLE Projetos(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) UNIQUE NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    date DATE NOT NULL
+);
+
+DESCRIBE Projetos
